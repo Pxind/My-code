@@ -133,9 +133,8 @@ void QueuePop(Queue* pq)
     if(pq->_head == pq->_tail)
     {
         free(pq->_head);
-        free(pq->_tail);
 
-        pq->_head == pq->_tail == NULL;
+        pq->_head = pq->_tail = NULL;
         return ;
     }
 
