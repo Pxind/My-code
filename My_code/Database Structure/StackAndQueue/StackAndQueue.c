@@ -133,7 +133,6 @@ void QueuePop(Queue* pq)
     if(pq->_head == pq->_tail)
     {
         free(pq->_head);
-
         pq->_head = pq->_tail = NULL;
         return ;
     }
@@ -183,3 +182,4 @@ int QueueSize(Queue* pq)
 
     return size;
 }
+
